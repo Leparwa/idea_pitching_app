@@ -5,7 +5,7 @@ from wtforms.validators import Required
 
 class PitchForm(FlaskForm):
 
-    title = StringField('Review title',validators=[Required()])
-    pitch_desc = TextAreaField('Pitch review')
+    title = StringField('Title',validators=[Required()])
+    pitch_desc = TextAreaField('Describe Your Idea')
     pitch_image_path = FileField()
     submit = SubmitField('Submit')
