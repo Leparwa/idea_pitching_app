@@ -37,7 +37,7 @@ def create_app(config_name):
         from .auth import auth as auth_blueprint
         app.register_blueprint(auth_blueprint,url_prefix = '/authenticate')
     
-        # Create Database Models
-        db.drop_all()
-        db.create_all()
+        # # Create Database Models
+        # db.drop_all()
+        # db.create_all()
     return app
