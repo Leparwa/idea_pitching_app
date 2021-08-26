@@ -1,0 +1,24 @@
+{% extends 'user_profile.html'%}
+
+{% block user_actions %}
+<div class="row">
+    {% for pitch in pitches %}
+    <div class="col-md-12">
+        <div class="card mt-2">
+            <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{{pitch.image}}" alt="image" height="100px" width="100px">
+                </div>
+                <div class="col-md-8">
+                    <h4>{{pitch.title}}</h4>
+                    <p>{{pitch.pitchSummary}}</p>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+{% endfor %} 
+</div>
+{% endblock%}
